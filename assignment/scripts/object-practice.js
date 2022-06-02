@@ -19,7 +19,7 @@ console.log('***** Object Practice *****')
 console.log('---#1 Start---');
 const me = {
   firstName: 'Nate',
-  lastname: 'Notermann',
+  lastName: 'Notermann',
   age: 32,
   hasSiblings: true,
   shoeCount: 3,
@@ -60,7 +60,7 @@ function isRed( cardToCheck ) {
 
 console.log( isRed(card0) );
 console.log( isRed(card1) );
-
+//-------end of test video code-----------
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -68,6 +68,9 @@ console.log( isRed(card1) );
     created above to set its value. 
   - Console.log fullName
 */
+console.log('---#2 Start---');
+let fullName = (me.firstName + ' ' + me.lastName); //only i could figure to add a space in between was to use " "
+console.log(fullName);
 
 
 
