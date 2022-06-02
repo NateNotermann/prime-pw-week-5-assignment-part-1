@@ -8,10 +8,59 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
+
+// const me = {
+//   // TODO - add properties here
+// };
+// console.log('A little about me:', me);
+//original questions code above------------------
+
+
+console.log('---#1 Start---');
 const me = {
+  firstName: 'Nate',
+  lastname: 'Notermann',
+  age: 32,
+  hasSiblings: true,
+  shoeCount: 3,
+  favThreeFoods: ['Pizza', 'Chicken', 'Beer']
   // TODO - add properties here
 };
 console.log('A little about me:', me);
+
+console.log( 'checking favThreeFoods & index #2 item. Should be "beer"', me.favThreeFoods[2]);
+
+
+
+
+//test video code//
+let card0 = {
+  suit: 'Hearts',
+  number: 2
+}
+
+let card1 = {
+  suite: 'Spades',
+  number: 1
+}
+// console.log(card0);
+// console.log(card0, card0.suit);
+// console.log(card0 + card0.suit);
+// console.log(card0.suit);
+
+function isRed( cardToCheck ) {
+  console.log( 'in isRed', cardToCheck );
+  if( cardToCheck.suit === 'Hearts' || cardToCheck.suit === 'Diamonds' ) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log( isRed(card0) );
+console.log( isRed(card1) );
+
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
