@@ -70,7 +70,8 @@ console.log( isRed(card1) );
 */
 console.log('---#2 Start---');
 let fullName = (me.firstName + ' ' + me.lastName); //only i could figure to add a space in between was to use " "
-console.log(fullName);
+console.log('my first name is:', me.firstName + ', and my last name is '+ me.lastName);
+console.log('making my whole name: ', fullName);
 
 
 
@@ -78,8 +79,18 @@ console.log(fullName);
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+console.log(me.favThreeFoods[0]); /*console.logging object "me", looks for PROPERTY named "favThreeFoods" 
+in index positions [0], with would be the first item in the array. should be 'pizza' */
+console.log(me.favThreeFoods[2]);//console.logging last item in array
 
-
+//tried to find last fav food with a function, didn't work
+// function lastItem (arrayName) {
+//   arrayEnd = arrayName.length;
+//   console.log(arrayEnd)
+//   return;
+// }
+// let testArray = ['Pizza', 'Chicken', 'Beer']
+// console.log('test lastItem', lastItem(me.favThreeFoods[favFoods,length]));
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
