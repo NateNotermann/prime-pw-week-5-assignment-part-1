@@ -132,6 +132,12 @@ console.log('testing whole me object', me );
 dot = '.';
 console.log('My name is', me.firstName, me.lastName, 'and I am', me.age + dot, 'My fav color is', me.favColor + dot, 'Fav foods are:', me.favThreeFoods + dot, 'And now I have', me.shoeCount, 'pairs of shoes' );
 
+let txt = '';
+for (let x in me) {
+  txt += me[x] +' ';
+}
+console.log('me object contains:', txt);
+
 // let array5Test = ['one', 'two', 'three'];
 // function add (array, property) {
 //   console.log('in add', array, property);
