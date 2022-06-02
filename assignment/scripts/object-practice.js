@@ -99,9 +99,15 @@ console.log(me.favThreeFoods[2]);//console.logging last item in array
   - Console.log your updated shoe count. 
 */
 
-console.log('testing shoeCount. should be 3-->', me.shoeCount);
-console.log('adding 1 to shoeCount. should be 4-->', me.shoeCount+1);
+// console.log('testing shoeCount. should be 3-->', me.shoeCount);
+// console.log('adding 1 to shoeCount. should be 4-->', me.shoeCount+1);
+console.log('adding 1 to shoeCount. should be 4-->', me.shoeCount = me.shoeCount+1);
+//console.logged me.shoeCount(3) to now equal me.shoecount but plus 1. 
+//should now be 4
 
+console.log( 'testing shoeCount after adding. Should be 4 -->', me.shoeCount );
+console.log( 'testing shoeCount + shoeCount. Should be 8 -->', me.shoeCount = me.shoeCount + me.shoeCount );
+//just playing around testing other versions of #4
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -109,3 +115,28 @@ console.log('adding 1 to shoeCount. should be 4-->', me.shoeCount+1);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+console.log('---#5start---');
+
+console.log('adding favColor - "blue" to me OBJECT', me.favColor = 'blue');
+//created new property above in a console.log
+
+console.log('testing favColor, should be "Blue"-->', me.favColor);
+me.favColor = 'Red';//created new property without a console.log
+console.log('testing NEW favColor, should be "Red"-->', me.favColor);
+me.favColor = me.favColor + ' orange'; //adding text string just for fun
+console.log( 'added "Red + Orange"-->', me.favColor); 
+console.log('changing back to "Blue"-->', me.favColor = 'Blue');
+console.log('testing whole me object', me );
+
+// let array5Test = ['one', 'two', 'three'];
+// function add (array, property) {
+//   console.log('in add', array, property);
+//   property = array[];
+//   return:
+// }
+// console.log( add());
+
+
+// console.log(me.favThreeFoods.length);
+// console.log( me );
